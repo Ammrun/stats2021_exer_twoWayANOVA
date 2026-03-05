@@ -123,16 +123,19 @@ summary(model)
 Compare the output from the lm() function with the output from the function in the jmv package.
 
 ```{r}
-jmv::ANOVA(
-    formula = Attractiveness ~ FaceType + Alcohol + FaceType:Alcohol,
-    data = dataset,
-    effectSize = "omega",
-    homo = TRUE,
-    norm = TRUE,
-    qq = TRUE,
-    postHoc = ~ FaceType + Alcohol,
-    postHocES = "d",
-    emMeans = ~ FaceType:Alcohol + Alcohol:FaceType)
+# jmv::ANOVA(
+#   formula = Attractiveness ~ FaceType_f + Alcohol_f + FaceType_f:Alcohol_f,
+#   data = dataset,
+#   effectSize = "omega",
+#   homo = TRUE,
+#   norm = TRUE,
+#   qq = TRUE,
+#   postHoc = ~ FaceType_f + Alcohol_f,
+#   postHocES = "d"
+# )
+```
+```
+```
 ```
 
 
